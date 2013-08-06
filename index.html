@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		
+		
+	</head>
+	
+	<body>
+	
+		<form id="section6" action="generate.php" method="post">
+		<h1>X6 Slitter Rewinder</h1>
+				<table>
+		
+			<h2>Quote Information</h2>
+		
+			<h4>1. Details</h4>
+			
+			<p>Fill in these details for the quote is addressed correctly.</p>
+			
+			<tr>
+			
+				<th>ID</th>
+				<th>Description</th>
+				<th>Input</th>
+			
+			</tr>
+			<tr>
+			
+				<td>1.1</td>
+				<td class="desc">Quote Number:</td>
+				<td><input type="text" class="text" name="1_1" placeholder="e.g. '3307313'" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>1.2</td>
+				<td class="desc">Company Name:</td>
+				<td><input type="text" class="text" name="1_2" placeholder="e.g. 'Universal'" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>1.3</td>
+				<td class="desc">For the attention of:</td>
+				<td><input type="text" class="text" name="1_3" placeholder="e.g. 'Carl Turner'" /></td>
+
+			</tr>
+		
+			<tr>
+			
+				<td>1.4</td>
+				<td class="desc">Final Quote Price</td>
+				<td><input type="text" class="text" name="1_4" value="£" /></td>
+
+			</tr>
+		
+		</table>
+
+				<table>
+		
+			<h2>Machine Specification</h2>
+					
+			<p>These options appear in section 3, the machine specification section, of the quote.</p>
+			<h4>Unwind/Master Rolls</h4>
+			<tr>
+			
+				<th>ID</th>
+				<th>Description</th>
+				<th>Selections</th>
+			
+			</tr>
+			<tr>
+			
+				<td>3.1</td>
+				<td class="desc">Unwind Type:</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_1" value="Front Loading (X1)" />Front Loading</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_1" value="Rear Loading (X1R)" />Rear Loading</td>
+
+			</tr>
+			<tr>
+			
+				<td>3.2</td>
+				<td class="desc">Maximum Roll Width:</td>
+				<td class="selection"><input type="text" class="text" name="3_2" value="700mm"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.3</td>
+				<td class="desc">Maximum Roll Diameter:</td>
+				<td class="selection"><input type="text" class="text" name="3_3" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.4</td>
+				<td class="desc">Maximum Roll Weight:</td>
+				<td class="selection"><input type="text" class="text" name="3_4" value="500kg"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.5</td>
+				<td class="desc">Roll Material:</td>
+				<td class="selection"><input type="text" class="text" name="3_5" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.6</td>
+				<td class="desc">Material Thickness:</td>
+				<td class="selection"><input type="text" class="text" name="3_6" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.7</td>
+				<td class="desc">Tension Range:</td>
+				<td class="selection"><input type="text" class="text" name="3_7" value="0.4-5N/cm (0.25-3PLI)"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.8</td>
+				<td class="desc">Core Material:</td>
+				<td class="selection"><input type="text" class="text" name="3_8" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.9</td>
+				<td class="desc">Core Size:</td>
+				<td class="selection"><input type="text" class="text" name="3_9" /></td>
+
+			</tr>
+		
+		</table>
+		<table>
+					<h4>Slitting/Cutting</h4>
+			<tr>
+			
+				<td>3.8</td>
+				<td class="desc">Slitting Type:</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_8" value="Shear" />Shear</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_8" value="Razor" />Razor</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_8" value="Crush" />Crush</td>
+
+			</tr>
+			<tr>
+			
+				<td>3.9</td>
+				<td class="desc">Knives/Razors Included:</td>
+				<td class="selection"><input type="text" class="text" name="3_9" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.10</td>
+				<td class="desc">Shear Anvils Included:</td>
+				<td class="selection"><input type="text" class="text" name="3_10" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.11</td>
+				<td class="desc">Razor Holders Included:</td>
+				<td class="selection"><input type="text" class="text" name="3_11" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.12</td>
+				<td class="desc">Minimum Slit Width:</td>
+				<td class="selection"><input type="text" class="text" name="3_12" /></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.13</td>
+				<td class="desc">Trim Removal Type:</td>
+				<td class="selection"><input type="text" class="text" name="3_13" /></td>
+
+			</tr>
+		
+		</table>
+		<table>
+		
+			<h4>Rewind/Finish Rolls</h4>
+			<tr>
+			
+				<td>3.14</td>
+				<td class="desc">Maximum Roll Diameter:</td>
+				<td class="selection"><input type="text" class="text" name="3_14" value="400mm"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.15</td>
+				<td class="desc">Maximum Roll Weight (Per Shaft):</td>
+				<td class="selection"><input type="text" class="text" name="3_15" value="75kg"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.16</td>
+				<td class="desc">Differential Shafts:</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_16" value="Yes" />Yes</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_16" value="No" />No</td>
+
+			</tr>
+			<tr>
+			
+				<td>3.17</td>
+				<td class="desc">Anti-static Systems:</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_17" value="Yes" />Yes</td>
+				<td class="selection"><input type="radio" class="radio1" name="3_17" value="No" />No</td>
+
+			</tr>
+			<tr>
+			
+				<td>3.18</td>
+				<td class="desc">Maximum Machine Speed:</td>
+				<td class="selection"><input type="text" class="text" name="3_18" value="200m/Minute (600ft/Minute)"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.19</td>
+				<td class="desc">Tension Range:</td>
+				<td class="selection"><input type="text" class="text" name="3_19" value="0.4-5N/cm (0.25-3PLI)"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.20</td>
+				<td class="desc">Unloading:</td>
+				<td class="selection"><input type="text" class="text" name="3_20" value="Swing out shafts"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.21</td>
+				<td class="desc">Core Material:</td>
+				<td class="selection"><input type="text" class="text" name="3_21" value="Cardboard"/></td>
+
+			</tr>
+			<tr>
+			
+				<td>3.22</td>
+				<td class="desc">Core Size:</td>
+				<td class="selection"><input type="text" class="text" name="3_22" /></td>
+
+			</tr>
+
+		
+		</table>
+	
+
+
+		<table>
+		
+			<h2>Quote Information</h2>
+		
+			<p>The following are details which are included in the quote. Click 'Yes' to include the details for that option, click 'No' to exclude the details for that option and click 'Optional' to include the details of that option with a price.</p>
+		
+			<h4>4. Unwind Details</h4>
+			
+			<tr>
+			
+				<th>ID</th>
+				<th>Description</th>
+				<th>Yes</th>
+				<th>No</th>
+				<th>Optional</th>
+			
+			</tr>
+			<tr>
+			
+				<td>4.1</td>
+				<td class="desc">Unwind type</td>
+				<td><input type="radio" class="radio" name="4_1" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="4_1" value="No" /></td>
+				<td><input type="radio" class="radio" name="4_1" value="Optional" /></td>
+							
+			</tr>
+			<tr>
+			
+				<td>4.2</td>				
+				<td class="desc">Unwind control brake</td>
+				<td><input type="radio" class="radio" name="4_2" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="4_2" value="No" /></td>
+				<td><input type="radio" class="radio" name="4_2" value="Optional" /></td>
+			
+			</tr>
+		
+		</table>
+
+		<hr/>
+
+		<table>
+		
+			<h4>5. Main Drive Details</h4>
+			
+			<tr>
+			
+				<th>ID</th>
+								<th>Description</th>
+
+				<th>Yes</th>
+				<th>No</th>
+				<th>Optional</th>
+			
+			</tr>
+			<tr>
+			
+				<td>5.1</td>
+								<td class="desc">Length counter</td>
+
+				<td><input type="radio" class="radio" name="5_1" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="5_1" value="No" /></td>
+				<td><input type="radio" class="radio" name="5_1" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+						
+				<td>5.2</td>
+								<td class="desc">Idle rollers</td>
+
+				<td><input type="radio" class="radio" name="5_2" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="5_2" value="No" /></td>
+				<td><input type="radio" class="radio" name="5_2" value="Optional" /></td>
+			
+			</tr>
+		
+		</table>
+		
+		<hr/>
+		
+		<table>
+		
+			<h4>6. Slitting Options</h4>
+			
+			<tr>
+			
+				<th>ID</th>
+								<th>Description</th>
+
+				<th>Yes</th>
+				<th>No</th>
+				<th>Optional</th>
+			
+			</tr>
+			<tr>
+			
+				<td>6.1</td>
+								<td class="desc">Shear Slitting</td>
+
+				<td><input type="radio" class="radio" name="6_1" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="6_1" value="No" /></td>
+				<td><input type="radio" class="radio" name="6_1" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+						
+				<td>6.2</td>	
+							<td class="desc">Razor Slitting</td>
+
+				<td><input type="radio" class="radio" name="6_2" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="6_2" value="No" /></td>
+				<td><input type="radio" class="radio" name="6_2" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+						
+				<td>6.3</td>
+								<td class="desc">Crush Cut</td>
+
+				<td><input type="radio" class="radio" name="6_3" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="6_3" value="No" /></td>
+				<td><input type="radio" class="radio" name="6_3" value="Optional" /></td>
+			
+			</tr>
+		
+		</table>
+
+		<hr/>
+
+		<table>
+		
+			<h4>7. Rewind Section Details</h4>
+			
+			<tr>
+			
+				<th>ID</th>
+				<th>Description</th>
+				<th>Yes</th>
+				<th>No</th>
+				<th>Optional</th>
+			
+			</tr>
+			<tr>
+			
+				<td>7.1</td>
+								<td class="desc">Air Shafts</td>
+
+				<td><input type="radio" class="radio" name="7_1" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="7_1" value="No" /></td>
+				<td><input type="radio" class="radio" name="7_1" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>7.2</td>
+								<td class="desc">Differential Shafts</td>
+
+				<td><input type="radio" class="radio" name="7_2" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="7_2" value="No" /></td>
+				<td><input type="radio" class="radio" name="7_2" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>7.3</td>
+								<td class="desc">Tension Control</td>
+
+				<td><input type="radio" class="radio" name="7_3" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="7_3" value="No" /></td>
+				<td><input type="radio" class="radio" name="7_3" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>7.4</td>
+								<td class="desc">Length Counters</td>
+
+				<td><input type="radio" class="radio" name="7_4" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="7_4" value="No" /></td>
+				<td><input type="radio" class="radio" name="7_4" value="Optional" /></td>
+			
+			</tr>
+
+		
+		</table>
+
+		<hr/>
+
+		<table>
+		
+			<h4>8. Drives and Controls</h4>
+			
+			<tr>
+			
+				<th>ID</th>
+				<th>Description</th>
+				<th>Yes</th>
+				<th>No</th>
+				<th>Optional</th>
+			
+			</tr>
+			<tr>
+			
+				<td>8.1</td>
+								<td class="desc">Operator Controls</td>
+
+				<td><input type="radio" class="radio" name="8_1" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="8_1" value="No" /></td>
+				<td><input type="radio" class="radio" name="8_1" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>8.2</td>
+								<td class="desc">Drive Motors</td>
+
+				<td><input type="radio" class="radio" name="8_3" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="8_3" value="No" /></td>
+				<td><input type="radio" class="radio" name="8_3" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>8.3</td>
+								<td class="desc">Drive Type</td>
+
+				<td><input type="radio" class="radio" name="8_4" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="8_4" value="No" /></td>
+				<td><input type="radio" class="radio" name="8_4" value="Optional" /></td>
+			
+			</tr>
+			<tr>
+			
+				<td>8.4</td>
+								<td class="desc">Machine Guarding</td>
+
+				<td><input type="radio" class="radio" name="8_5" value="Yes" /></td>
+				<td><input type="radio" class="radio" name="8_5" value="No" /></td>
+				<td><input type="radio" class="radio" name="8_5" value="Optional" /></td>
+			
+			</tr>
+
+		
+		</table>
+
+
+
+<hr/>
+
+
+		
+		<input type="submit" value="Get Quote" />
+		
+		
+		</form>
+
+	
+	</body>
+	
+</html>
